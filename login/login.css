@@ -133,6 +133,8 @@ form {
     text-transform: uppercase;
 
     transition: transform 0.2s;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .botao-entrar:hover {
