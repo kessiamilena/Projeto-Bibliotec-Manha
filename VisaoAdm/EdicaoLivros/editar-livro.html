@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Livro</title>
+
+    <link rel="stylesheet" href="editar-livro.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+
+    <link rel="shortcut icon" href="../../imgs/Icone - Bibliotec.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="pagina-listagem">
+
+    <aside class="menu-lateral">
+
+        <div class="topo-menu">
+
+            <button class="botao-voltar">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <img class="logo" src="../../imgs/Logo Vertical - clara.svg" alt="">
+
+        </div>
+
+        <nav class="menu-navegacao">
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-user"></i>
+                <span>Perfil</span>
+            </a>
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-user-plus"></i>
+                <span>Cadastrar Usuário</span>
+            </a>
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-user-group"></i>
+                <span>Listar Usuários</span>
+            </a>
+
+            <a href="../CadastroLivros/cadastro-livro.html" class="item-menu">
+                <i class="fa-solid fa-book-medical"></i>
+                <span>Cadastrar Livro</span>
+            </a>
+
+            <a href="../ListagemLivros/listagem.html" class="item-menu ativo">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <span>Listar Livros</span>
+            </a>
+
+            <a href="../Reservas/reservas.html" class="item-menu">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Livros Reservados</span>
+            </a>
+
+        </nav>
+
+        <a href="../../home/home.html" class="botao-sair">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Sair</span>
+        </a>
+
+    </aside>
+
+    <main class="conteudo-listagem">
+        <section class="cabecalho-pagina cabecalho-editar">
+            <a href="../ListagemLivros/listagem.html" class="voltar-listagem">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <div>
+                <h1>Editar livro</h1>
+                <p>Atualize as informações do livro cadastrado</p>
+            </div>
+        </section>
+
+        <section class="card-listagem">
+            <form class="formulario-livro">
+                <div class="campo-formulario campo-nome">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Mindset: A nova psicologia do sucesso">
+                </div>
+
+                <div class="campo-formulario campo-foto">
+                    <label for="foto">Foto</label>
+                    <input type="file" id="foto">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="escritor">Escritor(a)</label>
+                    <input type="text" id="escritor" placeholder="Carol S. Dweck">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="idioma">Idioma</label>
+                    <input type="text" id="idioma" placeholder="Português">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="editora">Editora</label>
+                    <input type="text" id="editora" placeholder="Objetiva">
+                </div>
+
+                <div class="campo-categorias">
+                    <label class="titulo-categorias">Categorias</label>
+
+                    <div class="lista-categorias">
+                        <div class="categoria">
+                            <input type="checkbox" id="romance">
+                            <label for="romance">Romance</label>
+                        </div>
+
+                        <div class="categoria">
+                            <input type="checkbox" id="suspense">
+                            <label for="suspense">Suspense</label>
+                        </div>
+
+                        <div class="categoria">
+                            <input type="checkbox" id="acao">
+                            <label for="acao">Ação</label>
+                        </div>
+
+                        <div class="categoria">
+                            <input type="checkbox" id="hq">
+                            <label for="hq">HQ</label>
+                        </div>
+
+                        <div class="categoria">
+                            <input type="checkbox" id="cientifico">
+                            <label for="cientifico">Científico</label>
+                        </div>
+
+                        <div class="categoria">
+                            <input type="checkbox" id="ficcao">
+                            <label for="ficcao">Ficção</label>
+                        </div>
+
+                        <div class="categoria">
+                            <input type="checkbox" id="fantasia">
+                            <label for="fantasia">Fantasia</label>
+                        </div>
+
+                        <div class="categoria">
+                            <input type="checkbox" id="terror">
+                            <label for="terror">Terror</label>
+                        </div>
+
+                        <div class="categoria">
+                            <input type="checkbox" id="culinaria">
+                            <label for="culinaria">Culinária</label>
+                        </div>
+
+                        <div class="categoria">
+                            <input type="checkbox" id="motivacional" checked>
+                            <label for="motivacional">Motivacional</label>
+                        </div>
+
+                        <div class="categoria">
+                            <input type="checkbox" id="ti">
+                            <label for="ti">TI</label>
+                        </div>
+
+                        <div class="categoria">
+                            <input type="checkbox" id="biografia">
+                            <label for="biografia">Biografia</label>
+                        </div>
+
+                        <div class="categoria">
+                            <input type="checkbox" id="infanto-juvenil">
+                            <label for="infanto-juvenil">Infanto-Juvenil</label>
+                        </div>
+
+                        <div class="categoria">
+                            <input type="checkbox" id="drama">
+                            <label for="drama">Drama</label>
+                        </div>
+
+                        <div class="categoria">
+                            <input type="checkbox" id="aventura">
+                            <label for="aventura">Aventura</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="campo-formulario campo-descricao">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" placeholder="Carol S. Dweck, professora de psicologia da Universidade Stanford, desenvolveu o conceito de mindset, que representa a forma como interpretamos desafios, erros e oportunidades. Segundo ela, essa mentalidade influencia diretamente nosso aprendizado, desempenho e sucesso, pois determina como reagimos às dificuldades e desenvolvemos nosso potencial."></textarea>
+                </div>
+
+                <div class="area-botao">
+                    <button type="submit" class="botao-salvar">Salvar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
