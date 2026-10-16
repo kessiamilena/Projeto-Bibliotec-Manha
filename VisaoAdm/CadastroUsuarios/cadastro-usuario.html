@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Usuário</title>
+
+    <link rel="stylesheet" href="cadastro-usuario.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+
+    <link rel="shortcut icon" href="../../imgs/Icone - Bibliotec.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="pagina-listagem">
+
+    <aside class="menu-lateral">
+
+        <div class="topo-menu">
+
+            <button class="botao-voltar">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <img class="logo" src="../../imgs/Logo Vertical - clara.svg" alt="">
+
+        </div>
+
+        <nav class="menu-navegacao">
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-user"></i>
+                <span>Perfil</span>
+            </a>
+
+            <a href="#" class="item-menu ativo">
+                <i class="fa-solid fa-user-plus"></i>
+                <span>Cadastrar Usuário</span>
+            </a>
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-user-group"></i>
+                <span>Listar Usuários</span>
+            </a>
+
+            <a href="../CadastroLivros/cadastro-livro.html" class="item-menu">
+                <i class="fa-solid fa-book-medical"></i>
+                <span>Cadastrar Livro</span>
+            </a>
+
+            <a href="../ListagemLivros/listagem.html" class="item-menu">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <span>Listar Livros</span>
+            </a>
+
+            <a href="../Reservas/reservas.html" class="item-menu">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Livros Reservados</span>
+            </a>
+
+        </nav>
+
+        <a href="../../home/home.html" class="botao-sair">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Sair</span>
+        </a>
+
+    </aside>
+
+
+    <main class="conteudo-listagem">
+
+        <!-- CABEÇALHO -->
+        <section class="cabecalho-pagina">
+            <h1>Cadastrar usuário</h1>
+            <p>Preencha as informações para cadastrar um novo usuário</p>
+        </section>
+
+
+        <!-- CARD PRINCIPAL -->
+        <section class="card-listagem">
+
+            <form class="formulario-usuario">
+
+                <!-- FOTO -->
+                <div class="area-foto">
+
+                    <label for="foto" class="campo-foto">
+
+                        <i class="fa-solid fa-pencil"></i>
+                        <p>Adicionar foto</p>
+                        <span>Clique para selecionar uma imagem</span>
+
+                    </label>
+
+                    <input type="file" id="foto">
+
+                </div>
+
+
+                <!-- NOME -->
+                <div class="campo-formulario campo-nome">
+
+                    <label for="nome">Nome completo</label>
+
+                    <input type="text" id="nome" placeholder="Ex.: João da Silva">
+
+                </div>
+
+
+                <!-- CELULAR -->
+                <div class="campo-formulario">
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" placeholder="Ex.: (11) 99999-9999">
+                </div>
+
+
+                <!-- DATA DE NASCIMENTO -->
+                <div class="campo-formulario">
+                    <label for="data-nascimento">Data de nascimento</label>
+                    <input type="text" id="data-nascimento" placeholder="Ex.: 25/05/1998">
+                </div>
+
+
+                <!-- E-MAIL -->
+                <div class="campo-formulario">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Ex.: joao.silva@email.com">
+                </div>
+
+
+                <!-- CURSO -->
+                <div class="campo-formulario">
+                    <label for="curso">Curso</label>
+
+                    <select id="curso">
+                        <option value="" selected disabled>Selecione um curso</option>
+                        <option value="desenvolvimento-sistemas">Desenvolvimento de Sistemas</option>
+                        <option value="redes">Redes de Computadores</option>
+                        <option value="multimidia">Multimídia</option>
+                    </select>
+                </div>
+
+
+                <!-- BOTÃO -->
+                <div class="area-botao">
+                    <button type="submit" class="botao-cadastrar">Cadastrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
