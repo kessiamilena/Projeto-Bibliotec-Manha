@@ -1,0 +1,191 @@
+/* CABEÇALHO */
+
+.cabecalho-detalhes {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.voltar-listagem {
+    color: var(--texto);
+
+    font-size: 35px;
+}
+
+
+.voltar-listagem:hover {
+    color: var(--cor-destaque);
+}
+
+
+/* PARTE SUPERIOR */
+
+.informacoes-principais {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    gap: 5%;
+    align-self: center;
+    width: 80%;
+}
+
+
+/* CAPA do livro */
+
+.capa {
+    width: 80%;
+}
+
+
+/* TÍTULO E DESCRIÇÃO */
+
+.informacoes-livro {
+    display: flex;
+    flex-direction: column;
+
+    gap: 70px;
+}
+
+
+.informacoes-livro h2 {
+    max-width: 75%;
+
+    font-size: 1.8em;
+    color: var(--texto);
+}
+
+
+/* DESCRIÇÃO */
+
+.descricao-livro {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.descricao-livro h3 {
+    font-size: 1.4em;
+
+    color: var(--texto);
+}
+
+
+.descricao-livro p {
+    max-width: 75%;
+
+    font-size: 1.2em;
+    color: var(--texto);
+}
+
+
+/* LINHA DIVISÓRIA */
+
+.area-linha {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+
+.linha-divisoria {
+    width: 65%;
+    height: 4px;
+
+    background-color: var(--cor-destaque);
+}
+
+
+/* INFORMAÇÕES COMPLEMENTARES  */
+
+.detalhes-informacoes {
+    display: flex;
+
+    justify-content: space-between;
+    margin: 0 120px 40px;
+}
+
+
+/* COLUNAS */
+
+.coluna-informacoes {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+
+/* CADA INFORMAÇÃO */
+
+.informacao {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.informacao p {
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--texto);
+}
+
+
+.informacao span {
+    font-size: 1em;
+    color: var(--textos-paginas);
+}
+
+
+/* BOTÃO  */
+
+.botao-excluir {
+
+    align-self: center;
+    
+    width: 30%;
+    height: 45px;
+
+    border: 2px solid #FF0000;
+    border-radius: 10px;
+
+    background-color: transparent;
+
+    color: #FF0000;
+
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.botao-excluir:hover {
+    background-color: #FF0000;
+
+    color: var(--branco);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+@media (max-width: 1700px) {
+
+    .area-linha {
+        margin: 30px 0;
+    }
+
+}

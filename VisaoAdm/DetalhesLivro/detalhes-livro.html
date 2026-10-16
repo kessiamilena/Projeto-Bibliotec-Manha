@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Livro</title>
+
+    <link rel="stylesheet" href="detalhes-livro.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+
+    <link rel="shortcut icon" href="../../imgs/Icone - Bibliotec.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="pagina-listagem">
+
+    <aside class="menu-lateral">
+
+        <div class="topo-menu">
+
+            <button class="botao-voltar">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <img class="logo" src="../../imgs/Logo Vertical - clara.svg" alt="">
+
+        </div>
+
+        <nav class="menu-navegacao">
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-user"></i>
+                <span>Perfil</span>
+            </a>
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-user-plus"></i>
+                <span>Cadastrar Usuário</span>
+            </a>
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-user-group"></i>
+                <span>Listar Usuários</span>
+            </a>
+
+            <a href="../CadastroLivros/cadastro-livro.html" class="item-menu">
+                <i class="fa-solid fa-book-medical"></i>
+                <span>Cadastrar Livro</span>
+            </a>
+
+            <a href="../ListagemLivros/listagem.html" class="item-menu ativo">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <span>Listar Livros</span>
+            </a>
+
+            <a href="../Reservas/reservas.html" class="item-menu">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Livros Reservados</span>
+            </a>
+
+        </nav>
+
+        <a href="../../home/home.html" class="botao-sair">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Sair</span>
+        </a>
+
+    </aside>
+
+    <main class="conteudo-listagem">
+        <section class="cabecalho-pagina cabecalho-detalhes">
+
+            <a href="../ListagemLivros/listagem.html" class="voltar-listagem">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <div>
+                <h1>Detalhes do livro</h1>
+                <p>Acesse todas as informações do livro cadastrado</p>
+            </div>
+
+        </section>
+
+        <section class="card-listagem card-detalhes">
+
+            <div class="informacoes-principais">
+                <img class="capa" src="../../imgs/livro-js.svg" alt="Capa do livro Lógica de Programação e Algoritmos com JavaScript">
+
+                <div class="informacoes-livro">
+                    <h2>Lógica de Programação e Algoritmos com JavaScript</h2>
+                    <div class="descricao-livro">
+                        <h3>Descrição:</h3>
+                        <p>O livro apresenta, de forma gradual e didática, os fundamentos de Lógica de Programação e Algoritmos, facilitando o aprendizado de iniciantes.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="area-linha">
+                <span class="linha-divisoria"></span>
+            </div>
+
+            <div class="detalhes-informacoes">
+
+                <div class="coluna-informacoes">
+                    <div class="informacao">
+                        <p>Editora:</p>
+                        <span>Novatec</span>
+                    </div>
+
+                    <div class="informacao">
+                        <p>Escritor:</p>
+                        <span>Edécio Fernando Iepsen</span>
+                    </div>
+
+                </div>
+
+                <div class="coluna-informacoes">
+                    <div class="informacao">
+                        <p>Idioma:</p>
+                        <span>Português</span>
+                    </div>
+
+                    <div class="informacao">
+                        <p>Categoria:</p>
+                        <span>Tecnologia, Educação</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="botao-excluir">Excluir livro</button>
+
+        </section>
+    </main>
+</body>
+</html>
