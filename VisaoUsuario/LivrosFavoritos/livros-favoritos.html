@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros Favoritos</title>
+
+    <link rel="stylesheet" href="livros-favoritos.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+
+    <link rel="shortcut icon" href="../../imgs/Icone - Bibliotec.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="pagina-listagem">
+
+    <aside class="menu-lateral">
+
+        <div class="topo-menu">
+
+            <button class="botao-voltar">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <img class="logo" src="../../imgs/Logo Vertical - clara.svg" alt="">
+
+        </div>
+
+        <nav class="menu-navegacao">
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-user"></i>
+                <span>Perfil</span>
+            </a>
+
+            <a href="../ListagemLivros/listagem-livros.html" class="item-menu">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <span>Listar Livros</span>
+            </a>
+
+            <a href="livros-favoritos.html" class="item-menu ativo">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Favoritos</span>
+            </a>
+
+        </nav>
+
+        <a href="../../home/home.html" class="botao-sair">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Sair</span>
+        </a>
+
+    </aside>
+
+    <main class="conteudo-listagem">
+
+        <section class="cabecalho-pagina">
+            <h1>Livros favoritos</h1>
+            <p>Veja os seus títulos favoritos</p>
+        </section>
+
+        <section class="card-listagem">
+
+            <div class="area-busca">
+
+                <div class="campo-busca">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="busca" placeholder="Buscar livro por nome ou autor...">
+                </div>
+
+                <div class="area-filtro">
+
+                    <button class="botao-filtro" id="abrir-filtros">
+                        <i class="fa-solid fa-sliders"></i>
+                        <span>Filtros</span>
+                    </button>
+
+                    <div class="caixa-filtros" id="caixa-filtros">
+
+                        <div class="cabecalho-filtros">
+                            <h2>Filtrar livros</h2>
+
+                            <button class="fechar-filtros" id="fechar-filtros">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+
+                        <p class="texto-filtros">Selecione uma ou mais opções para refinar a busca.</p>
+
+                        <div class="campos-filtros">
+
+                            <div class="campo-filtro">
+                                <label for="categoria">Categoria</label>
+
+                                <select id="categoria">
+                                    <option value="">Selecione uma categoria</option>
+                                    <option value="romance">Romance</option>
+                                    <option value="tecnologia">Tecnologia</option>
+                                    <option value="fantasia">Fantasia</option>
+                                    <option value="ficcao">Ficção</option>
+                                </select>
+                            </div>
+
+                            <div class="campo-filtro">
+                                <label for="autor">Autor</label>
+
+                                <select id="autor">
+                                    <option value="">Selecione um autor</option>
+                                    <option value="carolina-franca">Carolina França</option>
+                                    <option value="edson-perin">Edson Perin</option>
+                                    <option value="rv-campbell">R.V. Campbell</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="acoes-filtros">
+                            <button class="botao-limpar" id="limpar-filtros">Limpar</button>
+                            <button class="botao-aplicar" id="aplicar-filtros">Aplicar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="lista-livros">
+
+                <article class="card-livro">
+
+                    <img src="../../imgs/livro-filhasdalua.svg" alt="Capa do livro Filhas da Lua">
+
+                    <div class="informacoes-card">
+                        <h2>Filhas da lua</h2>
+                        <p>Carolina França</p>
+                    </div>
+
+                    <div class="acoes-card">
+                        <a href="../DetalhesLivro/detalhes-livro.html" class="botao-detalhes">Detalhes</a>
+
+                        <button class="botao-favorito">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+                <article class="card-livro">
+
+                    <img src="../../imgs/livro-ti.svg" alt="Capa do livro TI para negócios">
+
+                    <div class="informacoes-card">
+                        <h2>TI para negócios</h2>
+                        <p>Edson Perin</p>
+                    </div>
+
+                    <div class="acoes-card">
+                        <a href="../DetalhesLivro/detalhes-livro.html" class="botao-detalhes">Detalhes</a>
+
+                        <button class="botao-favorito">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+                <article class="card-livro">
+
+                    <img src="../../imgs/livro-mestredotempo.svg" alt="Capa do livro Mestres do Tempo">
+
+                    <div class="informacoes-card">
+                        <h2>Mestres do tempo</h2>
+                        <p>R.V. Campbell</p>
+                    </div>
+
+                    <div class="acoes-card">
+                        <a href="../DetalhesLivro/detalhes-livro.html" class="botao-detalhes">Detalhes</a>
+
+                        <button class="botao-favorito">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+                <article class="card-livro">
+
+                    <img src="../../imgs/livro-filhasdalua.svg" alt="Capa do livro Filhas da Lua">
+
+                    <div class="informacoes-card">
+                        <h2>Filhas da lua</h2>
+                        <p>Carolina França</p>
+                    </div>
+
+                    <div class="acoes-card">
+                        <a href="../DetalhesLivro/detalhes-livro.html" class="botao-detalhes">Detalhes</a>
+
+                        <button class="botao-favorito">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="mensagem-vazia" id="mensagem-vazia">Nenhum livro favorito encontrado.</p>
+
+        </section>
+
+    </main>
+
+    <script src="../../scripts/filtros.js"></script>
+</body>
+</html>
