@@ -89,6 +89,8 @@ a {
     flex-direction: column;
 
     padding: 30px 50px;
+
+    min-width: 300px;
 }
 
 /* TOPO DO MENU */
@@ -237,4 +239,12 @@ a {
 
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 1700px) {
+
+    html {
+        font-size: 14px;
+    }
+
 }
