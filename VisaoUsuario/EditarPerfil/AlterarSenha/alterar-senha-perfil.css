@@ -1,0 +1,170 @@
+/* AVISO DE IDENTIDADE */
+
+.aviso-identidade {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    padding: 20px;
+
+    border: 1px solid #A9C9FF;
+    border-radius: 10px;
+
+    background-color: #DCEAF5;
+
+    margin-bottom: 40px;
+}
+
+.icone-identidade {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #C3E1F7;
+    color: #1687FF;
+
+    font-size: 28px;
+}
+
+.informacoes-identidade {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.informacoes-identidade h2 {
+    font-size: 1.2em;
+    color: #111111;
+}
+
+.informacoes-identidade p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--texto);
+}
+
+.informacoes-identidade .negrito {
+    color: #111111;
+    font-weight: 700;
+}
+
+
+/* FORMULÁRIO */
+
+.formulario-senha {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+
+/* CAMPOS */
+
+.campo-senha {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.campo-senha label {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--texto);
+}
+
+.campo-senha input {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 20px;
+
+    border: 1px solid var(--cor-bordas);
+    border-radius: 10px;
+
+    background-color: var(--branco);
+    color: var(--textos-paginas);
+
+    font-family: inherit;
+    font-size: 1em;
+
+    outline: none;
+
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.20);
+}
+
+.campo-senha input:focus {
+    border-color: var(--cor-destaque);
+}
+
+
+/* BOTÃO SALVAR */
+
+.area-salvar-senha {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.botao-salvar-senha {
+    width: 30%;
+    min-width: 180px;
+    height: 45px;
+
+    border: 2px solid var(--cor-destaque);
+    border-radius: 10px;
+
+    background-color: transparent;
+    color: var(--cor-destaque);
+
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao-salvar-senha:hover {
+    background-color: var(--cor-destaque);
+    color: var(--branco);
+}
+
+
+/* NOTEBOOK */
+
+@media (max-height: 800px) {
+
+    .formulario-senha {
+        gap: 20px;
+    }
+
+    .area-salvar-senha {
+        margin-top: 10px;
+    }
+
+    .campo-senha label {
+        font-size: 1em;
+    }
+
+    .aviso-identidade {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+/* TELAS MENORES */
+
+@media (max-width: 900px) {
+
+    .card-alterar-senha {
+        gap: 35px;
+    }
+
+}
