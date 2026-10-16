@@ -1,0 +1,343 @@
+/* CONTEÚDO DO PERFIL */
+
+.conteudo-perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+/* FOTO DE PERFIL */
+
+.area-foto-perfil {
+    position: relative;
+
+    width: 230px;
+    height: 230px;
+
+    margin: 0 auto;
+}
+
+.imagem-perfil {
+    width: 100%;
+    height: 100%;
+
+    border: 2px dashed var(--cor-destaque);
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.area-foto-perfil input {
+    display: none;
+}
+
+.botao-editar-foto {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    background-color: var(--branco);
+    color: var(--cor-destaque);
+
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+/* FORMULÁRIO */
+
+.formulario-edicao {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.campos-edicao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 20px;
+}
+
+
+/* CAMPOS */
+
+.campo-edicao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo-edicao label {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--texto);
+}
+
+.campo-edicao input {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 20px;
+
+    border: 1px solid var(--cor-bordas);
+    border-radius: 10px;
+
+    background-color: var(--branco);
+    color: var(--textos-paginas);
+
+    font-family: inherit;
+    font-size: 1em;
+
+    outline: none;
+
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.20);
+}
+
+.campo-edicao input:focus {
+    border-color: var(--cor-destaque);
+}
+
+
+/* ALTERAR SENHA */
+
+.campo-alterar-senha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    height: 70px;
+
+    border: 1px solid var(--cor-bordas);
+    border-radius: 10px;
+
+    background-color: var(--branco);
+
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.20);
+}
+
+.campo-alterar-senha p {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--texto);
+}
+
+.campo-alterar-senha a {
+    color: var(--cor-destaque);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+/* BOTÃO SALVAR */
+
+.area-botao-salvar {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.botao-salvar-perfil {
+    width: 30%;
+    width: 180px;
+    height: 45px;
+
+    border: 2px solid var(--cor-destaque);
+    border-radius: 10px;
+
+    background-color: transparent;
+    color: var(--cor-destaque);
+
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao-salvar-perfil:hover {
+    background-color: var(--cor-destaque);
+    color: var(--branco);
+}
+
+
+/* AVISOS DE CONFIRMAÇÃO */
+
+.aviso-perfil {
+    display: none;
+    align-items: flex-start;
+    gap: 20px;
+
+    width: 100%;
+    margin-top: 260px;
+    padding: 20px;
+
+    border: 1px solid #A9C9FF;
+    border-radius: 10px;
+
+    background-color: #DCEAF5;
+}
+
+.aviso-perfil.ativo {
+    display: flex;
+}
+
+.icone-aviso-perfil {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #C3E1F7;
+    color: #1687FF;
+
+    font-size: 28px;
+}
+
+.informacoes-aviso {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.informacoes-aviso h2 {
+    font-size: 1.2em;
+    color: #111111;
+}
+
+.informacoes-aviso p {
+    font-size: 1em;
+    line-height: 1.8;
+    color: var(--texto);
+}
+
+.botao-aviso-perfil {
+    align-self: flex-end;
+
+    min-width: 180px;
+    height: 45px;
+
+    padding: 0 20px;
+
+    border: 2px solid var(--cor-destaque);
+    border-radius: 10px;
+
+    background-color: transparent;
+    color: var(--cor-destaque);
+
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.botao-aviso-perfil:hover {
+    background-color: var(--cor-destaque);
+    color: var(--branco);
+}
+
+/* DESFOCAR O CONTEÚDO DO PERFIL */
+
+.conteudo-perfil.desfocado {
+    filter: blur(5px);
+    /* pointer-events: none; impede que o usuário clique nos inputs, botões e links enquanto o pop-up estiver aberto. */
+}
+
+/* SOBREPOSIÇÃO DO FORMULÁRIO */
+
+.card-listagem {
+    position: relative;
+}
+
+.sobreposicao-perfil {
+    position: absolute;
+    inset: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+    border-radius: 30px;
+
+    z-index: 5;
+}
+
+.sobreposicao-perfil.ativo {
+    display: flex;
+}
+
+.aviso-perfil {
+    margin-top: 0;
+}
+
+/* NOTEBOOK */
+
+@media (min-width: 1100px) {
+
+    .campo-alterar-senha {
+        height: 50px;
+    }
+
+    .conteudo-perfil {
+        gap: 25px;
+    }
+
+    .area-foto-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .botao-editar-foto {
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+    }
+
+    .formulario-edicao {
+        gap: 25px;
+    }
+
+    .campos-edicao {
+        gap: 20px;
+    }
+
+    .aviso-perfil {
+        margin-top: 180px;
+    }
+
+}
+
+/* TELAS MENORES */
+
+@media (max-width: 900px) {
+
+    .campos-edicao {
+        grid-template-columns: 1fr;
+    }
+
+    .aviso-perfil {
+        margin-top: 100px;
+    }
+
+}

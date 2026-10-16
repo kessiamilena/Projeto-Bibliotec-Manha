@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="editar-perfil-usuario.css">
+
+    <link rel="shortcut icon" href="../../imgs/Icone - Bibliotec.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="pagina-listagem">
+
+    <aside class="menu-lateral">
+
+        <div class="topo-menu">
+
+            <button class="botao-voltar">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <img class="logo" src="../../imgs/Logo Vertical - clara.svg" alt="">
+
+        </div>
+
+        <nav class="menu-navegacao">
+
+            <a href="editar-perfil.html" class="item-menu ativo">
+                <i class="fa-solid fa-user"></i>
+                <span>Perfil</span>
+            </a>
+
+            <a href="../ListagemLivros/listagem-livros.html" class="item-menu">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <span>Listar Livros</span>
+            </a>
+
+            <a href="../LivrosFavoritos/livros-favoritos.html" class="item-menu">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Favoritos</span>
+            </a>
+
+        </nav>
+
+        <a href="../../home/home.html" class="botao-sair">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Sair</span>
+        </a>
+
+    </aside>
+
+    <main class="conteudo-listagem">
+
+        <section class="cabecalho-pagina">
+            <h1>Editar perfil</h1>
+            <p>Atualize as informações do seu perfil</p>
+        </section>
+
+        <section class="card-listagem">
+
+            <div class="conteudo-perfil">
+
+                <div class="area-foto-perfil">
+
+                    <img src="../../imgs/img-perfil-aluno.svg" alt="Foto de perfil" class="imagem-perfil">
+
+                    <label for="foto" class="botao-editar-foto">
+                        <i class="fa-solid fa-pencil"></i>
+                    </label>
+
+                    <input type="file" id="foto" accept="image/*">
+
+                </div>
+
+                <form class="formulario-edicao" id="formulario-edicao">
+
+                    <div class="campos-edicao">
+
+                        <div class="campo-edicao">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" value="João da Silva" required>
+                        </div>
+
+                        <div class="campo-edicao">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" value="joao.silva@email.com" required>
+                        </div>
+
+                        <div class="campo-edicao">
+                            <label for="celular">Celular</label>
+                            <input type="tel" id="celular" value="(11) 99999-9999" required>
+                        </div>
+
+                        <div class="campo-edicao">
+                            <label for="nascimento">Data de nascimento</label>
+                            <input type="text" id="nascimento" value="25/05/1998" required>
+                        </div>
+
+                    </div>
+
+                    <div class="campo-alterar-senha">
+                        <p>Senha</p>
+                        <a href="AlterarSenha/alterar-senha-perfil.html" id="alterar-senha">ALTERAR SENHA</a>
+                    </div>
+
+                    <div class="area-botao-salvar">
+                        <button type="submit" class="botao-salvar-perfil">SALVAR</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <!-- CONFIRMAÇÃO DE E-MAIL -->
+
+            <div class="sobreposicao-perfil" id="sobreposicao-perfil">
+
+                <div class="aviso-perfil" id="aviso-confirmacao">
+
+                    <div class="icone-aviso-perfil">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+
+                    <div class="informacoes-aviso">
+
+                        <h2>Confirme seu e-mail para alterar seus dados e sua senha</h2>
+
+                        <p>Para sua segurança, clique no botão para enviar um código de verificação para o e-mail cadastrado.</p>
+
+                        <button class="botao-aviso-perfil" id="enviar-email">ENVIAR E-MAIL</button>
+
+                    </div>
+
+                </div>
+
+                <!-- E-MAIL ENVIADO -->
+
+                <div class="aviso-perfil" id="aviso-email-enviado">
+
+                    <div class="icone-aviso-perfil">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+
+                    <div class="informacoes-aviso">
+                        <h2>E-mail enviado com sucesso.</h2>
+
+                        <p>Verifique sua caixa de entrada e, após confirmar, você poderá definir uma nova senha.</p>
+
+                        <button class="botao-aviso-perfil" id="voltar-perfil">VOLTAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="editar-perfil-usuario.js"></script>
+</body>
+</html>
