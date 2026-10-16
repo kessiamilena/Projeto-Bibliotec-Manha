@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+
+    <link rel="stylesheet" href="editar-perfil.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+
+    <link rel="shortcut icon" href="../../imgs/Icone - Bibliotec.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="pagina-listagem">
+
+    <aside class="menu-lateral">
+
+        <div class="topo-menu">
+
+            <button class="botao-voltar">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <img class="logo" src="../../imgs/Logo Vertical - clara.svg" alt="">
+
+        </div>
+
+        <nav class="menu-navegacao">
+
+            <a href="#" class="item-menu ativo">
+                <i class="fa-solid fa-user"></i>
+                <span>Perfil</span>
+            </a>
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-user-plus"></i>
+                <span>Cadastrar Usuário</span>
+            </a>
+
+            <a href="#" class="item-menu">
+                <i class="fa-solid fa-user-group"></i>
+                <span>Listar Usuários</span>
+            </a>
+
+            <a href="../CadastroLivros/cadastro-livro.html" class="item-menu">
+                <i class="fa-solid fa-book-medical"></i>
+                <span>Cadastrar Livro</span>
+            </a>
+
+            <a href="../ListagemLivros/listagem.html" class="item-menu">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <span>Listar Livros</span>
+            </a>
+
+            <a href="../Reservas/reservas.html" class="item-menu">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Livros Reservados</span>
+            </a>
+
+        </nav>
+
+        <a href="../../home/home.html" class="botao-sair">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Sair</span>
+        </a>
+
+    </aside>
+
+    <main class="conteudo-listagem">
+
+        <section class="cabecalho-pagina">
+            <h1>Editar perfil</h1>
+            <p>Atualize as informações do seu perfil</p>
+        </section>
+
+        <section class="card-listagem card-perfil">
+
+            <div class="perfil">
+                <div class="area-foto">
+                    <img src="../../imgs/img-perfil-adm.svg" alt="Foto de perfil" class="foto-perfil">
+
+                    <label for="foto" class="botao-editar-foto">
+                        <i class="fa-solid fa-pencil"></i>
+                    </label>
+
+                    <input type="file" id="foto">
+                </div>
+
+                <h2>Beatriz Tuane</h2>
+
+                <div class="nif">
+                    <p>NIF</p>
+                    <span>0215156456</span>
+                </div>
+
+            </div>
+
+            <div class="linha-divisoria"></div>
+
+            <form class="formulario-perfil">
+
+                <div class="campo-formulario">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="beatriz@sp.senai.br">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="senha-antiga">Senha antiga</label>
+                    <input type="password" id="senha-antiga">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="nova-senha">Nova senha</label>
+                    <input type="password" id="nova-senha">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="confirmar-senha">Confirmar senha</label>
+                    <input type="password" id="confirmar-senha">
+                </div>
+
+                <div class="area-botoes">
+                    <button type="submit" class="botao-salvar">Salvar</button>
+                    <button type="button" class="botao-excluir">Excluir conta</button>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
