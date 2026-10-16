@@ -126,3 +126,16 @@ botaoAnterior.addEventListener("click", () => {
 
 // Quando a página carregar, precisamos executar a função de mostrar página uma vez para esconder os livros que não pertencem a primeira página.
 mostrarPagina();
+
+
+/* clicando no botao de detalhes */
+
+const btnDetalhes = document.getElementById("detalhes");
+
+btnDetalhes.addEventListener("click", () => {
+    window.location.href = "../DetalhesLivro/detalhes-livro.html"
+
+    // podemos fazer de outra forma usando uma função também
+    // window.location.assign("../DetalhesLivro/detalhes-livro.html")
+    // da na mesma, só muda que um é função e o outro é uma propriedade que ta recebendo um valor
+})
