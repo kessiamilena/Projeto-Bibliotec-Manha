@@ -1,0 +1,477 @@
+/* BUSCA */
+
+.area-busca {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.campo-busca {
+
+    /* esse elemento pode ocupar o espaço disponível dentro do container flex. */
+    flex: 1;
+
+    /* 
+        flex: 1; é a mesma coisa que:
+            flex-grow: 1; o elemento pode crescer quando sobra espaço.
+            flex-shrink: 1; o elemento pode encolher quando não existe espaço suficiente.
+            flex-basis: 0%; fala para o elemento começar do 0% e junto com os outros, pode crescer ou diminuir.
+    */
+
+    height: 50px;
+    padding: 0 20px;
+
+    border: 1px solid var(--cor-bordas);
+    border-radius: 10px;
+
+    background-color: var(--branco);
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.campo-busca i {
+    font-size: 20px;
+    color: var(--azul-escuro);
+}
+
+.campo-busca input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    height: 100%;
+
+    font-family: inherit; /* estamos dizendo para herdar a fonte do pai */
+    font-size: 1.1em;
+    color: var(--textos-paginas);
+}
+
+
+/* BOTÃO FILTROS */
+
+.area-filtro {
+    position: relative;
+    width: 15%;
+}
+
+
+.botao-filtro {
+    height: 50px;
+    width: 100%;
+
+    padding: 0 20px;
+
+    border: 1px solid var(--cor-bordas);
+    border-radius: 10px;
+
+    background-color: var(--branco);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+
+    color: var(--textos-paginas);
+
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.botao-filtro i {
+    font-size: 20px;
+    color: var(--textos-paginas);
+}
+
+
+.botao-filtro:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* CAIXA DE FILTROS */
+
+.caixa-filtros {
+    position: absolute;
+
+    top: calc(100% + 10px);
+    right: 0;
+
+    width: 400px;
+
+    padding: 20px;
+
+    display: none;
+    flex-direction: column;
+
+    gap: 15px;
+
+    border-radius: 10px;
+
+    background-color: var(--branco);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    z-index: 10;
+}
+
+
+/* MOSTRA A CAIXA */
+
+.caixa-filtros.aberto {
+    display: flex;
+}
+
+
+/* 
+   CABEÇALHO DOS FILTROS  */
+
+.cabecalho-filtros {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.cabecalho-filtros h2 {
+    font-size: 1.1em;
+
+    color: var(--texto);
+}
+
+
+.fechar-filtros {
+    border: none;
+
+    background-color: transparent;
+
+    color: var(--texto);
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+/* TEXTO DOS FILTROS  */
+
+.texto-filtros {
+    font-size: 0.9em;
+    line-height: 1.4;
+
+    color: var(--textos-paginas);
+}
+
+
+/*  CAMPOS DOS FILTROS  */
+
+.campos-filtros {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    margin-top: 15px;
+}
+
+
+.campo-filtro {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.campo-filtro label {
+    font-size: 1em;
+    font-weight: 700;
+
+    color: var(--texto);
+}
+
+
+/* SELECT */
+
+.campo-filtro select {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 15px;
+
+    border: 1px solid var(--cor-bordas);
+    border-radius: 10px;
+
+    background-color: var(--branco);
+
+    font-family: inherit;
+    font-size: 0.9em;
+
+    color: var(--textos-paginas);
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+.campo-filtro select:focus {
+    border-color: var(--cor-destaque);
+}
+
+
+/* BOTÕES DOS FILTROS */
+
+.acoes-filtros {
+    display: flex;
+
+    gap: 5px;
+
+    margin-top: 20px;
+}
+
+
+.botao-limpar,
+.botao-aplicar {
+    flex: 1;
+
+    height: 40px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 0.9em;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* LIMPAR */
+
+.botao-limpar {
+    border: 1px solid var(--cor-destaque);
+
+    background-color: var(--branco);
+
+    color: var(--cor-destaque);
+}
+
+
+.botao-limpar:hover {
+    background-color: var(--fundos);
+}
+
+
+/* APLICAR */
+
+.botao-aplicar {
+    border: 1px solid var(--cor-destaque);
+
+    background-color: var(--cor-destaque);
+
+    color: var(--branco);
+}
+
+
+.botao-aplicar:hover {
+    opacity: 0.8;
+}
+
+/* MENSAGEM DE LIVRO NÃO ENCONTRADO */
+
+.mensagem-vazia {
+    display: none;
+
+    text-align: center;
+
+    font-size: 1.2em;
+    color: var(--textos-paginas);
+
+    padding: 30px;
+}
+
+
+/* LISTA DE LIVROS */
+
+.lista-livros {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 40px 20px;
+
+    justify-items: center;
+}
+
+
+/* CARD DO LIVRO */
+
+.card-livro {
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background-color: var(--branco);
+
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.20);
+}
+
+
+/* CAPA */
+
+.card-livro > img {
+    width: 140px;
+    height: 205px;
+
+    border-radius: 8px;
+
+    object-fit: cover;
+}
+
+
+/* INFORMAÇÕES DO LIVRO */
+
+.informacoes-card {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+.informacoes-card h2 {
+    font-size: 1em;
+
+    text-align: center;
+
+    color: var(--texto);
+}
+
+
+.informacoes-card p {
+    font-size: 0.75em;
+
+    text-align: center;
+
+    color: var(--textos-paginas);
+}
+
+
+/* AÇÕES DO CARD */
+
+.acoes-card {
+    width: 100%;
+
+    display: flex;
+
+    gap: 5px;
+}
+
+
+/* BOTÃO DETALHES */
+
+.botao-detalhes {
+    flex: 1;
+
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--cor-destaque);
+    border-radius: 8px;
+
+    color: var(--cor-destaque);
+
+    font-size: 0.7em;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    transition: 0.2s;
+}
+
+
+.botao-detalhes:hover {
+    background-color: var(--cor-destaque);
+
+    color: var(--branco);
+}
+
+
+/* BOTÃO FAVORITO */
+
+.botao-favorito {
+    width: 32px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--cor-destaque);
+    border-radius: 8px;
+
+    background-color: transparent;
+
+    color: var(--cor-destaque);
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.botao-favorito:hover {
+    background-color: var(--cor-destaque);
+
+    color: var(--branco);
+}
+
+@media (max-width: 1700px) {
+
+    .conteudo-listagem {
+        overflow-y: scroll;
+    }
+}
